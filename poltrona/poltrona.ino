@@ -1,3 +1,25 @@
+/*
+     Versao 1.2 
+             _
+            | |
+           _| |_
+          |     |  sensorCimaMotor2
+          |     |
+          |  2  |
+          |     |  sensorBaixoMotor2
+          ------- 
+
+             _
+            | |
+           _| |_
+          |     |  sensorCimaMotor1
+          |     |
+          |  1  |
+          |     |  sensorBaixoMotor1
+          ------- 
+
+
+*/
 
 // include the library code:
 #include <LiquidCrystal.h>
@@ -68,6 +90,7 @@ void loop() {
      }
   }
 
+/*
   // SENSOR CIMA MOTOR 2
   if (valor > 0 and valor < 100) {
      lcd.setCursor(2, 1);
@@ -76,6 +99,18 @@ void loop() {
         lcd.print("X");
      } else {
         sensorCimaMotor2 = AUSENTE;
+        lcd.print("-");
+     }
+  }
+*/
+  // SENSOR BAIXO MOTOR 2
+  if (valor > 0 and valor < 100) {
+     lcd.setCursor(3, 1);
+     if (sensorBaixoMotor2 == AUSENTE){
+        sensorBaixoMotor2 = PRESENTE;
+        lcd.print("X");
+     } else {
+        sensorBaixoMotor2 = AUSENTE;
         lcd.print("-");
      }
   }
