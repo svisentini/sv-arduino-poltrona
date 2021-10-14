@@ -40,3 +40,6 @@ Controle da Poltrona - Arduino
 | Saída 2 Motor 1 | 32 |
 | Saída 1 Motor 2 | 34 |
 | Saída 2 Motor 2 | 36 |
+
+# Liberar acesso a porta serial (Linux)
+sudo chmod a+rw /dev/ttyACM0
