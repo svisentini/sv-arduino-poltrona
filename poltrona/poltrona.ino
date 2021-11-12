@@ -20,12 +20,12 @@
           |     |  sensorBaixoMotor1
           ------- 
 
-sobe      amarelo   53
-desce     verde     51
-1 baixo   azul      49
-1 cima    roxo      47
-2 baixo   branco    45
-2 cima    cinza     43
+sobe      amarelo   52
+desce     verde     50
+1 baixo   azul      48
+1 cima    roxo      46
+2 baixo   branco    44
+2 cima    cinza     42
 
 
 */
@@ -43,21 +43,21 @@ const int PRESENT = 1;
 const int OUT     = 0;
 
 // Inputs
-int UP_BUTTON    = 53;
-int DOWN_BUTTON  = 51;
+int UP_BUTTON    = 52;   // Amarelo -> Botao de Subir
+int DOWN_BUTTON  = 50;   // Verde -> Botao de Descer
 
-int SENSOR_BOTON_MOTOR1 = 49;
-int SENSOR_TOP_MOTOR1   = 47;
-int SENSOR_BOTON_MOTOR2 = 45;
-int SENSOR_TOP_MOTOR2   = 43;
+int SENSOR_BOTON_MOTOR1 = 48;  // Azul
+int SENSOR_TOP_MOTOR1   = 46;  // Roxo
+int SENSOR_BOTON_MOTOR2 = 44;  // Branco
+int SENSOR_TOP_MOTOR2   = 42;  // Cinza
 
 // Outputs
-int OUT1MOTOR1 = 30;
-int OUT2MOTOR1 = 32;
-int OUT1MOTOR2 = 34;
-int OUT2MOTOR2 = 36;
+int OUT1MOTOR1 = 24;
+int OUT2MOTOR1 = 26;
+int OUT1MOTOR2 = 28;
+int OUT2MOTOR2 = 30;
 
-
+int REFERENCE_5V = 40;
 
 void setup() {
   // set up the LCD's number of columns and rows:
@@ -72,6 +72,7 @@ void setup() {
   pinMode(OUT2MOTOR1, OUTPUT);
   pinMode(OUT1MOTOR2, OUTPUT);
   pinMode(OUT2MOTOR2, OUTPUT);
+  pinMode(REFERENCE_5V, OUTPUT);
 
   // Input Buttons
   pinMode(UP_BUTTON, INPUT);
@@ -86,6 +87,7 @@ void setup() {
 
 void loop() {
 
+  digitalWrite(REFERENCE_5V, HIGH);
 
   if (digitalRead(UP_BUTTON) == ACTIVE){
       lcd.setCursor(0, 0);
