@@ -40,7 +40,7 @@ const int ACTIVE = 0;
 
 // Sensor State
 const int PRESENT = 1;
-const int OUT     = 0;
+const int OUT     = 1;
 
 // Inputs
 int UP_BUTTON    = 52;   // Amarelo -> Botao de Subir
