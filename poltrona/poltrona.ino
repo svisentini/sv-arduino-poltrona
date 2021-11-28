@@ -1,6 +1,6 @@
 /*
-    Versao...: 1.3
-    Data.....: 13/10/2021
+    Versao...: 1.4
+    Data.....: 28/11/2021
     Autor....: Sidney Visentini        
              _
             | |
@@ -39,8 +39,8 @@ LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 const int ACTIVE = 0;
 
 // Sensor State
-const int PRESENT = 1;
-const int OUT     = 1;
+const int PRESENT = 0;
+const int OUT     = 1; // é 1
 
 // Inputs
 int UP_BUTTON    = 52;   // Amarelo -> Botao de Subir
