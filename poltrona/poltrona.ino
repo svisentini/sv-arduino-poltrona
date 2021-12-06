@@ -39,17 +39,17 @@ LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 const int ACTIVE = 0;
 
 // Sensor State
-const int PRESENT = 0;
-const int OUT     = 1; // é 1
+const int PRESENT = 1;
+const int OUT     = 0; 
 
 // Inputs
 int UP_BUTTON    = 52;   // Amarelo -> Botao de Subir
 int DOWN_BUTTON  = 50;   // Verde -> Botao de Descer
 
-int SENSOR_BOTON_MOTOR1 = 48;  // Azul
-int SENSOR_TOP_MOTOR1   = 46;  // Roxo
-int SENSOR_BOTON_MOTOR2 = 44;  // Branco
-int SENSOR_TOP_MOTOR2   = 42;  // Cinza
+int SENSOR_BOTON_MOTOR1 = 46;  // Azul
+int SENSOR_TOP_MOTOR1   = 48;  // Roxo
+int SENSOR_BOTON_MOTOR2 = 42;  // Branco
+int SENSOR_TOP_MOTOR2   = 44;  // Cinza
 
 // Outputs
 int OUT1MOTOR1 = 24;
