@@ -20,13 +20,6 @@
           |     |  sensorBaixoMotor1
           ------- 
 
-sobe      amarelo   52
-desce     verde     50
-1 baixo   azul      48
-1 cima    roxo      46
-2 baixo   branco    44
-2 cima    cinza     42
-
 
 */
 
@@ -43,13 +36,13 @@ const int PRESENT = 1;
 const int OUT     = 0; 
 
 // Inputs
-int UP_BUTTON    = 52;   // Amarelo -> Botao de Subir
-int DOWN_BUTTON  = 50;   // Verde -> Botao de Descer
+int UP_BUTTON    = 52;   //  -> Botao de Subir
+int DOWN_BUTTON  = 50;   //  -> Botao de Descer
 
-int SENSOR_BOTON_MOTOR1 = 46;  // Azul
-int SENSOR_TOP_MOTOR1   = 48;  // Roxo
-int SENSOR_BOTON_MOTOR2 = 42;  // Branco
-int SENSOR_TOP_MOTOR2   = 44;  // Cinza
+int SENSOR_BOTON_MOTOR1 = 46;  
+int SENSOR_TOP_MOTOR1   = 48;  
+int SENSOR_BOTON_MOTOR2 = 42;  
+int SENSOR_TOP_MOTOR2   = 44;  
 
 // Outputs
 int OUT1MOTOR1 = 24;
