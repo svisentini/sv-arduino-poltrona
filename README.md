@@ -44,5 +44,8 @@ Controle da Poltrona - Arduino
 # Referencia 5v
 Utilizado pino 40 (Saída em HIGH)
 
+# Listar as portas
+ls /dev/tty*
+
 # Liberar acesso a porta serial (Linux)
 sudo chmod a+rw /dev/ttyACM0
